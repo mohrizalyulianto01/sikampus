@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('head.php');?>
+
+<?php
+session_start(); 
+include('head.php');?>
 <?php include('../config/config.php')?>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
