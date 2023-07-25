@@ -18,7 +18,7 @@ include('head.php');?>
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <?php include('logo.php');?>
+    
 
     <!-- Sidebar -->
     <?php include('sidebar.php');?>
@@ -32,7 +32,19 @@ include('head.php');?>
     <!-- Main content -->
     <?php include('data_mahasiswa.php');?>
   <!-- /.content-wrapper -->
-  
+  <!-- main content -->
+  <?php
+  if (isset($_GET['page'])){
+    // if ($_GET['page']=='dahboard.php');
+    // include('dahboard.php');
+  }
+  // else if ($_GET['page']=='data-mahasiswa'){
+  //   include('data_mahasiswa.php');
+  //    }
+  if($_GET['page']=='edit-data'){
+    include('edit/edit_data.php');
+     }
+  ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
